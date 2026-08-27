@@ -1,48 +1,28 @@
 # DiscussionBridge
 
-DiscussionBridge connects published content to durable, forum-governed
-discussion communities. The Alpha product family starts with Astro, Starlight,
-and Discourse while keeping the connection model suitable for additional site
-platforms.
+DiscussionBridge connects an Astro page to one durable, forum-governed
+Discourse topic.
 
-## What it does
+The current Alpha consists of:
 
-- creates or resolves companion topics under forum-owned policy;
-- embeds simple, full, or fullInteractive discussion experiences;
-- preserves explicit source, topic, community, and operating-identity boundaries;
-- supports static-site and checked-in Cloudflare deployment workflows;
-- gives Discourse operators a dedicated control plane without making the plugin
-  mandatory for every adapter use case.
+- `discourse-discussion-bridge` — a default-disabled Ruby Discourse plugin that
+  authenticates a dedicated connection, applies forum-owned policy, creates or
+  resolves one canonical page-to-topic mapping, exposes bounded operator
+  evidence/recovery, and qualifies a comments-only `fullInteractive` embed;
+- `astro-discussion-bridge` — the required Astro-side consumer that keeps the
+  connection secret server-side, requests controlled creation, stores the topic
+  binding, and renders the mapped Discourse discussion; and
+- Discourse Core — owner of composer/actions, authentication, sessions,
+  authorization, moderation, and post persistence.
 
-## Current product surfaces
+This Alpha does not promise a general API-key publishing framework, multiple
+independent platform adapters, multi-forum orchestration, or a managed SaaS
+control plane. The plugin also does not provision servers, containers, DNS,
+TLS, mail, backups, or provider resources.
 
-- [discussionbridge.dev](https://discussionbridge.dev/) — product front door
-- [docs.discussionbridge.dev](https://docs.discussionbridge.dev/) — manuals and
-  product documentation
-- [demo.discussionbridge.dev](https://demo.discussionbridge.dev/) — demonstration
-  chooser
-- [forum.discussionbridge.dev](https://forum.discussionbridge.dev/) — community
-  and support forum
-
-The Astro, Astro + Starlight, and stock Starlight demonstrations are linked from
-the demo chooser.
-
-## Repositories
-
-- [`discourse-discussion-bridge`](https://github.com/DiscussionBridge/discourse-discussion-bridge)
-  — public Discourse control-plane plugin
-- `astro-discussion-bridge` — DiscussionBridge for Astro adapter and package
-- `apex`, `docs`, and `demo` — independent product-site sources
-- `astro-demo-discussionbridge-dev`,
-  `astrostarlight-demo-discussionbridge-dev`, and
-  `stockstarlight-demo-discussionbridge-dev` — independent demo sources
-
-The non-plugin source repositories remain private during Alpha preparation.
-The archived `discussionbridge.dev` predecessor is retained only as historical
-Git provenance and is not an active product or deployment source.
-
-## Support
-
-Use the [DiscussionBridge forum](https://forum.discussionbridge.dev/) for
-community support. Formal Alpha support channels and any commercial service
-offerings will be published only after their operating boundaries are settled.
+Public product information remains at
+[discussionbridge.dev](https://discussionbridge.dev/), with community support
+at [forum.discussionbridge.dev](https://forum.discussionbridge.dev/). Release
+and installation claims will be made only after the exact plugin and adapter
+candidates pass their separate review, test, install, rollback, and combined
+human-acceptance gates.
