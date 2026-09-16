@@ -1,9 +1,9 @@
 # DiscussionBridge
 
-**Your discussions deserve freedom.** DiscussionBridge is a family of focused
-tools built around **The Bridge**, our Discourse-powered flagship. A platform
-can publish into a durable discussion, present a forum-owned publication, or
-offer comments without taking ownership of a reader's forum identity.
+**Publish on your site. Discuss on your forum.** DiscussionBridge connects
+Discourse with Astro, Ghost, Hugo, Statamic, and WordPress. The Bridge and its
+platform integrations support publishing in both directions and bringing
+comments to your pages.
 
 ## Start here
 
