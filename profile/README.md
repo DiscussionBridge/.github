@@ -1,37 +1,40 @@
 # DiscussionBridge
 
-DiscussionBridge is a family of focused tools built around **The Bridge**, its
-Discourse-powered flagship. Platform-native adapters and addons connect
-publishing systems to one durable, forum-governed discussion contract without
-turning the product into a generic control plane.
+**Your discussions deserve freedom.** DiscussionBridge is a family of focused
+tools built around **The Bridge**, our Discourse-powered flagship. A platform
+can publish into a durable discussion, present a forum-owned publication, or
+offer comments without taking ownership of a reader's forum identity.
 
-## DiscussionBridge Alpha.19
+## Start here
 
-The coordinated public candidate contains six implementation packages:
+- [Explore the live demos](https://demo.discussionbridge.dev/) and their
+  [Discourse publishing matrix](https://demo.discussionbridge.dev/discourse/).
+- [Download and install](https://discussionbridge.dev/download/) a component.
+- Read the [operator guide](https://docs.discussionbridge.dev/alpha-operator-guide/),
+  [platform profiles](https://docs.discussionbridge.dev/platform-profiles/), and
+  [dated versions and live status](https://docs.discussionbridge.dev/versions-and-live-status/).
+- Ask questions in the [community forum](https://forum.discussionbridge.dev/)
+  or use [Alpha support](https://discussionbridge.dev/support/).
 
-- [`discourse-discussion-bridge`](https://github.com/DiscussionBridge/discourse-discussion-bridge)
-  — **The Bridge**, the unified Discourse receiving and publishing plugin;
-- [`astro-discussion-bridge`](https://github.com/DiscussionBridge/astro-discussion-bridge)
-  — Astro and Astro + Starlight publishing, retrieval, and comments;
-- [`ghost-discussion-bridge`](https://github.com/DiscussionBridge/ghost-discussion-bridge)
-  — a native Ghost integration with its hosting-layer adapter service;
-- [`hugo-discussion-bridge`](https://github.com/DiscussionBridge/hugo-discussion-bridge)
-  — Hugo publishing, retrieval, and comments;
-- [`statamic-discussion-bridge`](https://github.com/DiscussionBridge/statamic-discussion-bridge)
-  — one Statamic addon for independently configured Flat, DB, and SSG profiles;
-  and
-- [`wordpress-discussion-bridge`](https://github.com/DiscussionBridge/wordpress-discussion-bridge)
-  — a native WordPress publishing, retrieval, retry, and comments plugin.
+## Product family
 
-The language-neutral wire contract and conformance fixtures live in
-[`discussionbridge-adapter-contract`](https://github.com/DiscussionBridge/discussionbridge-adapter-contract).
+| Component | Job |
+| --- | --- |
+| [The Bridge — DiscussionBridge for Discourse](https://github.com/DiscussionBridge/discourse-discussion-bridge) | The receiving and publishing plugin, Content Connections, and durable Bridge Records. |
+| [DiscussionBridge for Astro](https://github.com/DiscussionBridge/astro-discussion-bridge) | Astro and Astro + Starlight publishing, retrieval, and comments. |
+| [DiscussionBridge for Ghost](https://github.com/DiscussionBridge/ghost-discussion-bridge) | Ghost integration plus a separately hosted adapter service. |
+| [DiscussionBridge for Hugo](https://github.com/DiscussionBridge/hugo-discussion-bridge) | Trusted-build publishing, retrieval, and comments. |
+| [DiscussionBridge for Statamic](https://github.com/DiscussionBridge/statamic-discussion-bridge) | One addon for independently configured Flat, DB, and SSG profiles. |
+| [DiscussionBridge for WordPress](https://github.com/DiscussionBridge/wordpress-discussion-bridge) | Native publishing, retrieval, retry, and comments plugin. |
 
-The shared `v0.2.0-alpha.19` tag and GitHub prereleases identify the exact
-candidate prepared for human sandbox installation and configuration. They do
-not yet claim development/pre-production, live-demo, production, or final Alpha
-acceptance.
+The [DiscussionBridge Adapter Protocol](https://github.com/DiscussionBridge/discussionbridge-adapter-contract)
+is the shared wire contract and conformance fixture set; it is not a seventh
+platform adapter. Each component has its own versioned GitHub release. The
+exact current releases and installed sandbox/demo versions are tracked in
+[Versions and Live Status](https://docs.discussionbridge.dev/versions-and-live-status/),
+not inferred from a single family tag or from a moving `main` branch.
 
-Explore the [product](https://discussionbridge.dev/),
-[documentation](https://docs.discussionbridge.dev/),
-[live demos](https://demo.discussionbridge.dev/), and
-[community](https://forum.discussionbridge.dev/).
+DiscussionBridge is in **Alpha**. Human-operated sandbox installs and live
+demonstrations are separate from development/preproduction promotion and final
+release acceptance. The [documentation](https://docs.discussionbridge.dev/)
+states those boundaries explicitly.
